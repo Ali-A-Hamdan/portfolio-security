@@ -26,6 +26,9 @@
                             required autocomplete="new-password" />
 
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
+            <small class="text-xs text-gray-600">
+                Password must be least 10 characters and include at least one capital letter, one small letter, one number, and one special character (e.g. #).
+            </small>
         </div>
 
         <!-- Confirm Password -->
